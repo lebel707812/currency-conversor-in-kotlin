@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtCalculator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/textName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnCalculator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/btnCalculator"
+        app:layout_constraintEnd_toEndOf="@+id/txtWrite"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/txtWrite"
+        app:layout_constraintTop_toBottomOf="@+id/txtWrite" />
+
+    <EditText
+        android:id="@+id/txtWrite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/txtCalculator"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculator"
+        android:autofillHints=" " />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/emptyString"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalculator"
+        app:layout_constraintStart_toStartOf="@+id/btnCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

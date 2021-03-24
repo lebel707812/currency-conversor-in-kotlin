@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Conversor de Dólar</string>
+    <string name="hint">Insira o valor em Real(BRL)</string>
+    <string name="btnCalculator">DÓLAR HOJE</string>
+    <string name="textName">Conversor de Dólar</string>
+    <string name="emptyString" />
+</resources>
