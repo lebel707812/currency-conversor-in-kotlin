@@ -1,7 +1,38 @@
 <resources>
     <string name="app_name">Conversor de Dólar</string>
-    <string name="hint">Insira o valor em Real(BRL)</string>
-    <string name="btnCalculator">DÓLAR HOJE</string>
-    <string name="textName">Conversor de Dólar</string>
+    <string name="hint">Insira um valor</string>
+    <string name="btnCalculator">CONVERTA</string>
+    <string name="textName">Converta uma moeda</string>
     <string name="emptyString" />
+    <string name="de_para">DE PARA</string>
+
+    <string-array name="currencies">
+        <item>USD</item>
+
+        <item>GBP</item>
+        <item>EUR</item>
+        <item>BRL</item>
+
+        <item>SEK</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>JPY</item>
+
+    </string-array>
+
+    <string-array name="currencies2">
+        <item>BRL</item>
+
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+
+        <item>SEK</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>JPY</item>
+
+    </string-array>
+
+
 </resources>

@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/txtCalculator"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="30dp"
         android:text="@string/textName"
         android:textAlignment="center"
@@ -21,15 +22,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
         android:id="@+id/btnCalculator"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="100dp"
         android:text="@string/btnCalculator"
         app:layout_constraintEnd_toEndOf="@+id/txtWrite"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txtWrite"
         app:layout_constraintTop_toBottomOf="@+id/txtWrite" />
 
@@ -38,15 +38,46 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:autofillHints=" "
         android:ems="10"
-        android:inputType="numberDecimal"
         android:hint="@string/hint"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/txtCalculator"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txtCalculator"
-        app:layout_constraintTop_toBottomOf="@+id/txtCalculator"
-        android:autofillHints=" " />
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculator" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="25.1dp"
+        android:text="@string/de_para"
+        android:paddingStart="50dp"
+        android:paddingTop="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWrite"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWrite"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWrite" />
 
     <TextView
         android:id="@+id/textView"
@@ -54,11 +85,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="@string/emptyString"
-        android:textSize="26sp"
-        android:textColor="@color/black"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="@+id/btnCalculator"
         app:layout_constraintStart_toStartOf="@+id/btnCalculator"
         app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
